@@ -153,11 +153,8 @@
     margin: 0px 10px;
 }
 
-/* .mtble{
-    padding-left: 20px;
-} */
 .td1 {
-    width: 140px;
+    width: 170px;
     font-weight: 500;
     font-size: 18px;
     padding-left: 20px !important;
@@ -213,25 +210,31 @@
 .contentp {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: flex-start; */
-    /* padding-left: 30px; */
     height: calc(100vh - 89px);
     background-color: white;
 }
 
 .divPY {
     padding-left: 30px;
-    padding-right: 50px;
+    padding-right: 40px;
     padding-top: 25px;
+}
+
+.radiobtn1{
+    display: flex;
 }
 
 .radiobtn {
     display: flex;
+    align-items: center;
 }
 
 .rdiv {
     margin-right: 50px;
+}
+
+.rdivfir{
+    margin-right: 80px;
 }
 
 .form-check-input:checked {
@@ -241,6 +244,14 @@
 
 .checkcolor {
     margin-right: 10px;
+}
+
+.form-select{
+  width: 40% !important;
+  /* width: min-content; */
+  color: rgb(255, 170, 0) !important;
+  border: none !important;
+  outline: none !important;
 }
 
 .name {
@@ -288,6 +299,9 @@
     .td1 {
         width: auto;
     }
+    .form-select{
+        margin-left: 50px !important;
+    }
 }
 
 @media screen and (max-width: 1024px) and (min-width:770px) {
@@ -313,6 +327,15 @@
 
     .td1 {
         width: 145px;
+    }
+    .rdiv{
+        margin-right: 15px;
+    }
+    .rdivfir{
+        margin-right: 45px;
+    }
+    .form-select{
+        margin-left: 9px !important;
     }
 }
 
@@ -350,5 +373,25 @@
         font-size: 22px !important;
         margin: 0px 0px !important;
     }
+    .rdiv{
+        margin-right: 15px;
+    }
+    .rdivfir{
+        margin-right: 45px;
+    }
+    .form-select{
+        margin-left: 16px !important; 
+    }
+}
 
+@media screen and (max-width: 1700px) and (min-width:1030px) {
+.form-select{
+    margin-left: 50px !important;
+}
+}
+
+@media screen and (max-width: 1110) and (min-width:1030px) {
+  .td1{
+    width: 140px;
+  }
 }

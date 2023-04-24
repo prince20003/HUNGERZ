@@ -67,14 +67,14 @@
                         <div style="margin-top: 20px;">
                             <p>Select Payment Menthod</p>
                             <div class="radiobtn">
-                                <div class="rdiv">
+                                <div class="rdivfir">
                                     <input class="form-check-input checkcolor" type="radio" name="flexRadioDefault"
                                         id="flexRadioDefault1" checked>
                                     <label class="form-check-label" for="flexRadioDefault1">
                                         Cash
                                     </label>
                                 </div>
-                                <div class="rdiv">
+                                <div class="rdiv1">
                                     <input class="form-check-input checkcolor" type="radio" name="flexRadioDefault"
                                         id="flexRadioDefault2">
                                     <label class="form-check-label" for="flexRadioDefault2">
@@ -93,13 +93,19 @@
                                         Takeaway
                                     </label>
                                 </div>
-                                <div class="rdiv">
+                                <div class="rdiv1">
                                     <input class="form-check-input checkcolor" type="radio" name="flexRadioDefaultOrder"
                                         id="flexRadioDefault4" checked>
                                     <label class="form-check-label" for="flexRadioDefault4">
                                         Dine-in
                                     </label>
                                 </div>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Select Table</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
                             </div>
                         </div>
                         <div style="margin-top: 25px;">
@@ -107,14 +113,13 @@
                             <form>
                                 <div style="display: flex; flex-direction: column">
                                     <input type="text" placeholder="Enter Full Name" class="name">
-                                    <input type="text" placeholder="Enter Phone Number" class="number">
+                                    <input type="number" placeholder="Enter Phone Number" class="number">
                                 </div>
 
                             </form>
                         </div>
                     </div>
-                    <div class="btn-group" role="group"
-                        style="display: grid; grid-template-columns: 49% 49%">
+                    <div class="btn-group" role="group" style="display: grid; grid-template-columns: 49% 49%; margin-top: 80px;">
                         <a href="/addOrder.html"><button type="button" class="cancelbtn">Cancel</button></a>
                         <a href="#"><button type="button" class="orderbtn">Sumbit</button></a>
                     </div>
