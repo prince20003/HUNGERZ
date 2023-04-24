@@ -302,6 +302,10 @@
     .form-select{
         margin-left: 50px !important;
     }
+    .contentp{
+        height: fit-content !important;
+        margin-bottom: 20px !important;
+    }
 }
 
 @media screen and (max-width: 1024px) and (min-width:770px) {
