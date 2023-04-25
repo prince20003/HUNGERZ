@@ -1,0 +1,284 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="booking.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+    <div class="bgdiv">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;margin-bottom: 20px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">HUNGERZ<span style="color: rgb(255, 170, 0)">DESK</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item icontext">
+                            <span class="material-icons"
+                                style="color: rgb(255, 170, 0);font-size: 18px;margin: 0px 5px;">
+                                assignment
+                            </span>
+                            <a class="nav-link active" aria-current="page" href="#">POS</a>
+                        </li>
+                        <li class="nav-item icontext">
+                            <span class="material-icons"
+                                style="color: rgb(255, 170, 0);font-size: 18px;margin: 0px 5px;">
+                                description
+                            </span>
+                            <a class="nav-link" href="#">Transactions</a>
+                        </li>
+                        <li class="nav-item icontext">
+                            <span class="material-icons"
+                                style="color: rgb(255, 170, 0);font-size: 18px;margin: 0px 5px;">
+                                accessible
+                            </span>
+                            <a class="nav-link" href="#">Bookings</a>
+                        </li>
+                        <li class="nav-item icontext">
+                            <span class="material-icons"
+                                style="color: rgb(255, 170, 0);font-size: 18px;margin: 0px 5px;">
+                                hourglass_bottom
+                            </span>
+                            <a class="nav-link" href="#">Order Status</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" style="margin-bottom: 0px;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJz0NPfL1U3kkLflijqO_9ArT-iE_QLc8mPw&usqp=CAU"
+                            alt="logo" width="50px" height="50px">
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="mainhe" style="display: flex; justify-content: space-between;">
+            <div class="headerDe">
+                <div class="boxde"></div>
+                <h2 class="h2t">Bookings</h2>
+                <button class="bookbtn">Book New</button>
+            </div>
+            <div class="searchdiv">
+                <span class="material-icons searchicon">
+                    search
+                </span>
+                <input type="text" class="searchfiled" id="" placeholder="Search item">
+            </div>
+        </div>
+        <div class="tabled">
+            <div class="table-responsive">
+                <table id="dtBasicExample" class="table table-striped">
+                    <thead class="theadc">
+                        <tr>
+                            <th scope="col" style="padding-left: 20px;">DATE</th>
+                            <th scope="col">TIME</th>
+                            <th scope="col">CUSTOMER</th>
+                            <th scope="col">NOTE</th>
+                            <th scope="col">UPDATED ON</th>
+                            <th scope="col">ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="font-weight: 500; font-size: 18px;">
+                            <td class="td1">12 June 2020</td>
+                            <td class="time">11:30 am</td>
+                            <td class="customer">Samantha Smith</td>
+                            <td>My Anniversary</td>
+                            <td class="updo">12 June 2020 12:30 pm</td>
+                            <td class="action">
+                                <div class="bgdele">
+                                    <span class="material-icons deleteicon">
+                                        delete
+                                    </span>
+                                </div>
+                                <div class="bgedit">
+                                    <span class="material-icons editicon">
+                                        edit
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="font-weight: 500; font-size: 18px;">
+                            <td class="td1">12 June 2020</td>
+                            <td class="time">6:30 pm</td>
+                            <td class="customer">Petter Johnson</td>
+                            <td>Serve Vine First</td>
+                            <td class="updo">12 June 2020 12:30 pm</td>
+                            <td class="action">
+                                <div class="bgdele">
+                                    <span class="material-icons deleteicon">
+                                        delete
+                                    </span>
+                                </div>
+                                <div class="bgedit">
+                                    <span class="material-icons editicon">
+                                        edit
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="font-weight: 500; font-size: 18px;">
+                            <td class="td1">12 June 2020</td>
+                            <td class="time">11:30 am</td>
+                            <td class="customer">Samantha Smith</td>
+                            <td>My Anniversary</td>
+                            <td class="updo">12 June 2020 12:30 pm</td>
+                            <td class="action">
+                                <div class="bgdele">
+                                    <span class="material-icons deleteicon">
+                                        delete
+                                    </span>
+                                </div>
+                                <div class="bgedit">
+                                    <span class="material-icons editicon">
+                                        edit
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="font-weight: 500; font-size: 18px;">
+                            <td class="td1">13 June 2020</td>
+                            <td class="time">3:30 pm</td>
+                            <td class="customer">Emaila Davis</td>
+                            <td>Need Clean Space</td>
+                            <td class="updo">12 June 2020 12:30 pm</td>
+                            <td class="action">
+                                <div class="bgdele">
+                                    <span class="material-icons deleteicon">
+                                        delete
+                                    </span>
+                                </div>
+                                <div class="bgedit">
+                                    <span class="material-icons editicon">
+                                        edit
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="font-weight: 500; font-size: 18px;">
+                            <td class="td1">12 June 2020</td>
+                            <td class="time">11:30 am</td>
+                            <td class="customer">Samantha Smith</td>
+                            <td>My Anniversary</td>
+                            <td class="updo">12 June 2020 12:30 pm</td>
+                            <td class="action">
+                                <div class="bgdele">
+                                    <span class="material-icons deleteicon">
+                                        delete
+                                    </span>
+                                </div>
+                                <div class="bgedit">
+                                    <span class="material-icons editicon">
+                                        edit
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="font-weight: 500; font-size: 18px;">
+                            <td class="td1">12 June 2020</td>
+                            <td class="time">10:00 am</td>
+                            <td class="customer">Rose Merry</td>
+                            <td>No Note</td>
+                            <td class="updo">12 June 2020 12:30 pm</td>
+                            <td class="action">
+                                <div class="bgdele">
+                                    <span class="material-icons deleteicon">
+                                        delete
+                                    </span>
+                                </div>
+                                <div class="bgedit">
+                                    <span class="material-icons editicon">
+                                        edit
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="font-weight: 500; font-size: 18px;">
+                            <td class="td1">14 June 2020</td>
+                            <td class="time">5:00 pm</td>
+                            <td class="customer">Lisa Devilson</td>
+                            <td>First Date</td>
+                            <td class="updo">12 June 2020 12:30 pm</td>
+                            <td class="action">
+                                <div class="bgdele">
+                                    <span class="material-icons deleteicon">
+                                        delete
+                                    </span>
+                                </div>
+                                <div class="bgedit">
+                                    <span class="material-icons editicon">
+                                        edit
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="font-weight: 500; font-size: 18px;">
+                            <td class="td1">14 June 2020</td>
+                            <td class="time">10:30 am</td>
+                            <td class="customer">Paul Haydon</td>
+                            <td>No Note</td>
+                            <td class="updo">12 June 2020 12:30 pm</td>
+                            <td class="action">
+                                <div class="bgdele">
+                                    <span class="material-icons deleteicon">
+                                        delete
+                                    </span>
+                                </div>
+                                <div class="bgedit">
+                                    <span class="material-icons editicon">
+                                        edit
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="footer">
+                    <p style="font-weight: 500; font-size: 18px">Showing 1 to 10 of 126 Items</p>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- <script>
+        $(document).ready(function () {
+            $('#dtBasicExample').DataTable({
+                "pagingType": "simple_numbers" // "simple" option for 'Previous' and 'Next' buttons only
+            });
+            $('.dataTables_length').addClass('bs-select');
+        });
+
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
