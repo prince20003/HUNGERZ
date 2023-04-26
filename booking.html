@@ -15,7 +15,8 @@
 
 <body>
     <div class="bgdiv">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;margin-bottom: 20px;">
+        <nav class="navbar navbar-expand-lg navbar-light"
+            style="background-color: white;margin-bottom: 20px; z-index : 1060">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">HUNGERZ<span style="color: rgb(255, 170, 0)">DESK</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -65,7 +66,7 @@
             <div class="headerDe">
                 <div class="boxde"></div>
                 <h2 class="h2t">Bookings</h2>
-                <button class="bookbtn">Book New</button>
+                <button class="bookbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Book New</button>
             </div>
             <div class="searchdiv">
                 <span class="material-icons searchicon">
@@ -265,7 +266,47 @@
 
             </div>
         </div>
+    </div>
 
+    <!-- Modal -->
+    <div class="modal fade right" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Booking</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="modelform">
+                        <div class="leftform">
+                            <p for="Date">SELECT DATE</p>
+                            <input type="date" class="datefiled" placeholder="Select Date">
+                            <p for="name">CUSTOMER NAME</p>
+                            <input type="text" class="datefiled" placeholder="Enter Customer Name">
+                            <p for="number">PHONE NUMBER</p>
+                            <input type="number" class="datefiled" placeholder="Enter Number">
+                        </div>
+                        <div class="rightform">
+                            <p for="time">SELECT TIME</p>
+                            <input type="time" class="datefiled" placeholder="Select Time">
+                            <p for="per">SELECT PERSON</p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select Person</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p for="note">ADD NOTES</p>
+                    <input type="text" class="datefiled" placeholder="i.g For Anniversary Surprise">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="cancelbtn" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="Addbtn">Add Booking</button>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- <script>
         $(document).ready(function () {
