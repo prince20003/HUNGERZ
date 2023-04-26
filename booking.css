@@ -208,6 +208,8 @@
     width: 100% !important;
     border-bottom: none;
     border: none;
+    height: 60px;
+    font-size: 20px;
 }
 
 .Addbtn {
@@ -217,6 +219,8 @@
     width: 100% !important;
     border-bottom: none;
     border: none;
+    height: 60px;
+    font-size: 20px;
 }
 
 .modal-footer {

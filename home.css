@@ -220,7 +220,7 @@
     padding-top: 25px;
 }
 
-.radiobtn1{
+.radiobtn1 {
     display: flex;
 }
 
@@ -233,7 +233,7 @@
     margin-right: 50px;
 }
 
-.rdivfir{
+.rdivfir {
     margin-right: 80px;
 }
 
@@ -246,12 +246,12 @@
     margin-right: 10px;
 }
 
-.form-select{
-  width: 40% !important;
-  /* width: min-content; */
-  color: rgb(255, 170, 0) !important;
-  border: none !important;
-  outline: none !important;
+.form-select {
+    width: 40% !important;
+    /* width: min-content; */
+    color: rgb(255, 170, 0) !important;
+    border: none !important;
+    outline: none !important;
 }
 
 .name {
@@ -299,10 +299,12 @@
     .td1 {
         width: auto;
     }
-    .form-select{
+
+    .form-select {
         margin-left: 50px !important;
     }
-    .contentp{
+
+    .contentp {
         height: fit-content !important;
         margin-bottom: 20px !important;
     }
@@ -332,13 +334,16 @@
     .td1 {
         width: 145px;
     }
-    .rdiv{
+
+    .rdiv {
         margin-right: 15px;
     }
-    .rdivfir{
+
+    .rdivfir {
         margin-right: 45px;
     }
-    .form-select{
+
+    .form-select {
         margin-left: 9px !important;
     }
 }
@@ -377,25 +382,55 @@
         font-size: 22px !important;
         margin: 0px 0px !important;
     }
-    .rdiv{
+
+    .rdiv {
         margin-right: 15px;
     }
-    .rdivfir{
+
+    .rdivfir {
         margin-right: 45px;
     }
-    .form-select{
-        margin-left: 16px !important; 
+
+    .form-select {
+        margin-left: 16px !important;
     }
 }
 
 @media screen and (max-width: 1700px) and (min-width:1030px) {
-.form-select{
-    margin-left: 50px !important;
-}
+    .form-select {
+        margin-left: 50px !important;
+    }
 }
 
 @media screen and (max-width: 1110px) and (min-width:1030px) {
-  .td1{
-    width: 140px;
-  }
+    .td1 {
+        width: 140px;
+    }
+}
+
+.offcanvas {
+    margin-top: 65px !important;
+    width: 250px !important;
+}
+
+ul {
+    padding-left: 0px !important;
+    margin-bottom: 30px !important;
+}
+
+.menuicon {
+ margin-right: 15px;
+}
+
+.listmenu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: #b3b3b5;
+    font-weight: 500;
+}
+.clobtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
