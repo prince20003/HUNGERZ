@@ -275,6 +275,35 @@
     font-size: 18px;
 }
 
+
+.offcanvas {
+    margin-top: 65px !important;
+    width: 250px !important;
+}
+
+ul {
+    padding-left: 0px !important;
+    margin-bottom: 30px !important;
+}
+
+.menuicon {
+    margin-right: 15px;
+}
+
+.listmenu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: #b3b3b5;
+    font-weight: 500;
+}
+
+.clobtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 768px) {
     .maindiv {
         display: flex;
@@ -406,31 +435,4 @@
     .td1 {
         width: 140px;
     }
-}
-
-.offcanvas {
-    margin-top: 65px !important;
-    width: 250px !important;
-}
-
-ul {
-    padding-left: 0px !important;
-    margin-bottom: 30px !important;
-}
-
-.menuicon {
- margin-right: 15px;
-}
-
-.listmenu {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    color: #b3b3b5;
-    font-weight: 500;
-}
-.clobtn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

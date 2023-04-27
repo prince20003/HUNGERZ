@@ -230,6 +230,35 @@
     padding: 0px !important;
 }
 
+
+.offcanvas {
+    margin-top: 65px !important;
+    width: 250px !important;
+}
+
+ul {
+    padding-left: 0px !important;
+    margin-bottom: 30px !important;
+}
+
+.menuicon {
+    margin-right: 15px;
+}
+
+.listmenu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: #b3b3b5;
+    font-weight: 500;
+}
+
+.clobtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 770px) and (min-width:500px) {
     .action {
         height: 65px;
@@ -273,14 +302,15 @@
         margin-left: -40px;
         height: auto !important;
     }
-    .modelform{
+
+    .modelform {
         display: grid;
         grid-template-columns: 100%;
     }
 
-    .modal-footer{
-      padding-left: 3px !important;
-      padding-right: 10px !important;
+    .modal-footer {
+        padding-left: 3px !important;
+        padding-right: 10px !important;
     }
 }
 

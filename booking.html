@@ -57,7 +57,8 @@
                     </ul>
                     <form class="d-flex" style="margin-bottom: 0px;">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJz0NPfL1U3kkLflijqO_9ArT-iE_QLc8mPw&usqp=CAU"
-                            alt="logo" width="50px" height="50px">
+                            alt="logo" width="50px" height="50px" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                     </form>
                 </div>
             </div>
@@ -308,6 +309,89 @@
             </div>
         </div>
     </div>
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-body">
+            <ul>
+                <li class="listmenu">
+                    <span class="material-icons menuicon">
+                        people
+                    </span>
+                    People
+                </li>
+            </ul>
+            <ul>
+                <li class="listmenu">
+                    <span class="material-icons menuicon">
+                        account_balance_wallet
+                    </span>
+                    Wallet
+                </li>
+            </ul>
+            <ul>
+                <li class="listmenu">
+                    <span class="material-icons menuicon">
+                        restaurant_menu
+                    </span>
+                    Food Item
+                </li>
+            </ul>
+            <ul>
+                <li class="listmenu">
+                    <span class="material-icons menuicon">
+                        star
+                    </span>
+                    Reviews
+                </li>
+            </ul>
+            <ul>
+                <li class="listmenu">
+                    <span class="material-icons menuicon">
+                        verified_user
+                    </span>
+                    Authentication
+                </li>
+            </ul>
+            <ul>
+                <li class="listmenu">
+                    <span class="material-icons menuicon">
+                        settings
+                    </span>
+                    Settings
+                </li>
+            </ul>
+            <ul>
+                <li class="listmenu">
+                    <span class="material-icons menuicon">
+                        email
+                    </span>
+                    Support
+                </li>
+            </ul>
+            <ul>
+                <li class="listmenu">
+                    <span class="material-icons menuicon">
+                        assignment
+                    </span>
+                    Terms & Conditions
+                </li>
+            </ul>
+            <ul>
+                <li class="listmenu">
+                    <span class="material-icons menuicon">
+                        logout
+                    </span>
+                    Logout
+                </li>
+            </ul>
+            <div class="clobtn">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
     <!-- <script>
         $(document).ready(function () {
             $('#dtBasicExample').DataTable({
