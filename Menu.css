@@ -1,0 +1,92 @@
+.headerMenu {
+    background-color: white;
+    padding: 15px;
+}
+
+.maindivM {
+    background-color: rgb(251, 251, 251);
+}
+
+.bodyMenu {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 20px 10px 20px 20px;
+}
+
+.tablegreen {
+    background-color: hsl(147.24deg 100% 29.8%);
+    color: white;
+    border-radius: 15px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+
+.tableyellow {
+    background-color: hsl(41.76deg 98.43% 49.8%);
+    color: white;
+    border-radius: 15px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+
+.tablered {
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+
+.tablenocolor {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+
+.tableno {
+    padding: 15px 20px;
+}
+
+.headingt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Serveditem {
+    margin-bottom: 0px !important;
+    margin-top: 45px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.Servednoitem {
+    margin-bottom: 0px !important;
+    margin-top: 45px;
+    font-weight: 600;
+    font-size: 20px;
+    color: lightgray;
+}
+
+.timet {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 770px) and (min-width: 430px) {
+    .bodyMenu {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        padding: 20px 10px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 430px) and (min-width: 300px) {
+    .bodyMenu {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 20px 10px 20px 20px;
+    }
+
+}
