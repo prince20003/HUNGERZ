@@ -1,0 +1,102 @@
+.icontext {
+    display: flex;
+    align-items: center;
+}
+
+.bgdiv {
+    background-color: hsl(228deg 55.56% 98.24%);
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.set_Main_part{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0px 0;
+    height: 100%;
+
+}
+
+.setbgcol{
+    background-color: white;
+    margin: 0px 10px;
+}
+.set_Main_A{
+    padding: 20px;
+}
+
+.flex{
+    display: flex;
+
+}
+.btna{
+    background-color: hsl(225deg 22.22% 96.47%);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border: none;
+     border-radius: 50px;
+     padding: 5px 10px;
+     font-size: 12px;
+     font-weight: 500;
+     opacity: 0.5;
+     width: 100px;
+}
+.set_form_label{
+    font-size: 8px;
+    color: gray;
+    padding: 5px 0;
+    font-weight: 500;
+   opacity: 0.5 ;
+}
+.set_form_input
+{
+    border-radius: 50px;
+    width: 100%;
+    border: none;
+    background-color: hsl(225deg 22.22% 96.47%);
+    padding: 5px 10px;
+    height: 25px;
+    font-size: 10px;
+    font-weight: 500;
+}
+.sethungerimg{
+    height: 90px;
+    width: 90px;
+    border-radius: 15px;
+
+}
+.set_bank_part{
+    padding: 20px 0 0 0;
+}
+
+.color_box{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+.s_btn{
+    background-color:hsl(41.61deg 97.64% 49.8%);
+    float: right;
+    border: none;
+    margin: 10px 0;
+    margin-right: 10px;
+    border-radius: 50px;
+    color: white;
+    padding: 5px 30px;
+    font-size: 12px;
+}
+
+
+
+
+@media only screen and (max-width:430px){
+    .set_Main_part{
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 0px 0;
+        height: 100%;
+    
+    }
+}
