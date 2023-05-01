@@ -259,6 +259,104 @@ ul {
     align-items: center;
 }
 
+.offcanvas {
+    z-index: 1061 !important;
+}
+
+.TableData {
+    width: 400px !important;
+    overflow-y: scroll;
+}
+
+.headerBox {
+    padding: 20px 15px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    border-top: 8px solid lightgray;
+    border-bottom: 7px solid lightgray;
+    padding-bottom: 10px !important;
+}
+
+.priced {
+    text-align: end;
+}
+
+.trow {
+    font-weight: 600 !important;
+}
+
+.theadItem {
+    color: #b3b3b5;
+}
+
+.tablep {
+    padding: 15px 15px !important;
+}
+
+.totaldiv {
+    padding: 15px 15px !important;
+    margin-top: 40px !important;
+}
+
+.totald {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600 !important;
+}
+
+.Bottomdiv {
+    border-top: 7px solid lightgray;
+}
+
+.deliverydet {
+    padding: 15px 15px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perimg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+#dMP {
+    margin-right: 24px !important;
+}
+
+.map {
+    width: 400px !important;
+}
+
+#modelCo {
+    height: calc(100vh - 50px) !important;
+    position: fixed !important;
+}
+
+.mapimg {
+    width: -webkit-fill-available;
+    height: 450px;
+}
+
+.MessageD {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.headerModel {
+    padding: 20px 15px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border-top: 8px solid lightgray;
+    border-bottom: 7px solid lightgray;
+    padding-bottom: 10px !important;
+}
+
 @media screen and (max-width: 770px) and (min-width:500px) {
     .action {
         height: 65px;
@@ -266,6 +364,14 @@ ul {
 
     .modal.fade:not(.in).right .modal-dialog {
         margin-top: 53px !important;
+    }
+
+    .TableData {
+        width: 350px !important;
+    }
+
+    .map {
+        width: 380px !important;
     }
 }
 

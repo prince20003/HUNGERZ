@@ -11,12 +11,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+    <script src="booking.js"></script>
 </head>
 
 <body>
     <div class="bgdiv">
         <nav class="navbar navbar-expand-lg navbar-light"
-            style="background-color: white;margin-bottom: 20px; z-index : 1060">
+            style="background-color: white;margin-bottom: 20px; z-index : 1080">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">HUNGERZ<span style="color: rgb(255, 170, 0)">DESK</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -90,7 +91,8 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="font-weight: 500; font-size: 18px;">
+                        <tr style="font-weight: 500; font-size: 18px; cursor: pointer;" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTableData" aria-controls="offcanvasRight">
                             <td class="td1">12 June 2020</td>
                             <td class="time">11:30 am</td>
                             <td class="customer">Samantha Smith</td>
@@ -109,7 +111,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr style="font-weight: 500; font-size: 18px;">
+                        <tr style="font-weight: 500; font-size: 18px; cursor: pointer;" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTableData" aria-controls="offcanvasRight">
                             <td class="td1">12 June 2020</td>
                             <td class="time">6:30 pm</td>
                             <td class="customer">Petter Johnson</td>
@@ -128,7 +131,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr style="font-weight: 500; font-size: 18px;">
+                        <tr style="font-weight: 500; font-size: 18px; cursor: pointer;" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTableData" aria-controls="offcanvasRight">
                             <td class="td1">12 June 2020</td>
                             <td class="time">11:30 am</td>
                             <td class="customer">Samantha Smith</td>
@@ -147,7 +151,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr style="font-weight: 500; font-size: 18px;">
+                        <tr style="font-weight: 500; font-size: 18px; cursor: pointer;" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTableData" aria-controls="offcanvasRight">
                             <td class="td1">13 June 2020</td>
                             <td class="time">3:30 pm</td>
                             <td class="customer">Emaila Davis</td>
@@ -166,7 +171,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr style="font-weight: 500; font-size: 18px;">
+                        <tr style="font-weight: 500; font-size: 18px; cursor: pointer;" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTableData" aria-controls="offcanvasRight">
                             <td class="td1">12 June 2020</td>
                             <td class="time">11:30 am</td>
                             <td class="customer">Samantha Smith</td>
@@ -185,7 +191,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr style="font-weight: 500; font-size: 18px;">
+                        <tr style="font-weight: 500; font-size: 18px; cursor: pointer;" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTableData" aria-controls="offcanvasRight">
                             <td class="td1">12 June 2020</td>
                             <td class="time">10:00 am</td>
                             <td class="customer">Rose Merry</td>
@@ -204,7 +211,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr style="font-weight: 500; font-size: 18px;">
+                        <tr style="font-weight: 500; font-size: 18px; cursor: pointer;" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTableData" aria-controls="offcanvasRight">
                             <td class="td1">14 June 2020</td>
                             <td class="time">5:00 pm</td>
                             <td class="customer">Lisa Devilson</td>
@@ -223,7 +231,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr style="font-weight: 500; font-size: 18px;">
+                        <tr style="font-weight: 500; font-size: 18px; cursor: pointer;" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTableData" aria-controls="offcanvasRight">
                             <td class="td1">14 June 2020</td>
                             <td class="time">10:30 am</td>
                             <td class="customer">Paul Haydon</td>
@@ -310,7 +319,7 @@
         </div>
     </div>
 
-
+    <!-- navigation -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-body">
             <ul>
@@ -392,7 +401,105 @@
         </div>
     </div>
 
-    <!-- <script>
+    <!-- offcanvasTableData -->
+    <div class="offcanvas offcanvas-end TableData" tabindex="-1" id="offcanvasTableData"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header headerBox">
+            <div>
+                <h4 id="offcanvasRightLabel">Jimmy Taylor</h4>
+                <p style="color: #b3b3b5;">AB0123 | 15 JUN, 11:35 am</p>
+            </div>
+            <img src="icons/icons8-chat-message-32.png" alt="" id="chatbtn" data-bs-toggle="modal"
+                data-bs-target="#ModalMap" onclick="fun()">
+        </div>
+        <div class="TableDataItem">
+            <div class="tablep">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr class="theadItem">
+                            <th scope="col">Q.</th>
+                            <th scope="col">ITEMS</th>
+                            <th scope="col" style="text-align: end;">PRICE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="trow">
+                            <td>1</td>
+                            <td>Onion Garlic Sandwich</td>
+                            <td class="priced">$12.00</td>
+                        </tr>
+                        <tr class="trow">
+                            <td>1</td>
+                            <td>Cheese Garlic Pizza</td>
+                            <td class="priced">$12.00</td>
+                        </tr>
+                        <tr class="trow">
+                            <td></td>
+                            <td>With Extra Cheese</td>
+                            <td class="priced">$3.00</td>
+                        </tr>
+                        <tr class="trow">
+                            <td>1</td>
+                            <td>Ham Burger</td>
+                            <td class="priced">$10.00</td>
+                        </tr>
+                        <tr class="trow">
+                            <td>1</td>
+                            <td>Vanilla Ice Cream</td>
+                            <td class="priced">$8.00</td>
+                        </tr>
+                </table>
+            </div>
+            <div class="totaldiv">
+                <div class="totald">
+                    <p>Sub Total</p>
+                    <p class="priced">$51.00</p>
+                </div>
+                <div class="totald">
+                    <p>Service fee</p>
+                    <p class="priced">$3.00</p>
+                </div>
+                <div class="totald">
+                    <p>Total Paid in <span style="font-weight: 800;">CASH</span></p>
+                    <p class="priced" style="font-weight: 800;">$54.00</p>
+                </div>
+            </div>
+            <div class="Bottomdiv">
+                <div class="deliverydet">
+                    <img src="icons/photo-1633332755192-727a05c4013d.avif" alt="" class="perimg">
+                    <div>
+                        <h4 id="offcanvasRightLabel">Georage Anderson</h4>
+                        <p style="color: #b3b3b5;">Delivery partner assigned</p>
+                    </div>
+                    <img src="icons/icons8-near-me-24.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mapmodal -->
+    <div class="modal fade right" id="ModalMap" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" id="dMP">
+            <div class="modal-content map" id="modelCo">
+                <div class="headerModel" style="background-color: white;">
+                    <img src="icons/photo-1633332755192-727a05c4013d.avif" alt="" class="perimg">
+                    <h4 id="offcanvasRightLabel">Georage Anderson</h4>
+                    <button type="button" id="mapclose" onclick="clo()" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close" style="color: rgb(255, 170, 0);"></button>
+                </div>
+                <div class="body">
+                    <img src="icons/Screenshot (141).png" alt="" class="mapimg">
+                    <div class="Bottomdiv" style="background-color: white;">
+                        <div class="MessageD">
+                            <p style="margin-bottom: 0px; color: #b3b3b5;">Send Message To Delivery Patner</p>
+                            <img src="icons/icons8-sent-32.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <script>
         $(document).ready(function () {
             $('#dtBasicExample').DataTable({
                 "pagingType": "simple_numbers" // "simple" option for 'Previous' and 'Next' buttons only
@@ -401,9 +508,9 @@
         });
 
     </script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
