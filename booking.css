@@ -3,10 +3,6 @@
     align-items: center;
 }
 
-.bgdiv {
-    background-color: rgb(251, 251, 251);
-}
-
 .headerDe {
     display: flex;
     align-items: center;
@@ -80,6 +76,12 @@
     padding-left: 20px !important;
 }
 
+.tableRow {
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
 .time {
     font-weight: 700;
 }
@@ -126,6 +128,11 @@
 
 .footer {
     display: flex;
+}
+
+.footerde {
+    font-weight: 500;
+    font-size: 18px
 }
 
 .pagination {
@@ -263,7 +270,7 @@ ul {
     z-index: 1061 !important;
 }
 
-.TableData {
+#offcanvasTableData {
     width: 400px !important;
     overflow-y: scroll;
 }
@@ -284,6 +291,18 @@ ul {
 
 .trow {
     font-weight: 600 !important;
+}
+
+.textEnd {
+    text-align: end;
+}
+
+.fontWe {
+    font-weight: 800;
+}
+
+#bColor {
+    background-color: white;
 }
 
 .theadItem {
@@ -322,9 +341,16 @@ ul {
     border-radius: 50%;
 }
 
+.SendMessage {
+    margin-bottom: 0px;
+    color: #b3b3b5;
+}
+
 #dMP {
     margin-right: 24px !important;
 }
+
+
 
 .map {
     width: 400px !important;
@@ -338,6 +364,7 @@ ul {
 .mapimg {
     width: -webkit-fill-available;
     height: 450px;
+    border: 0px !important;
 }
 
 .MessageD {

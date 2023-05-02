@@ -1,0 +1,68 @@
+#navbarH {
+    background-color: white !important;
+    margin-bottom: 20px !important;
+    z-index: 1080 !important;
+}
+
+.headingcolor {
+    color: rgb(255, 177, 0) !important;
+}
+
+.icontext {
+    display: flex;
+    align-items: center;
+}
+
+#navicon {
+    color: rgb(255, 170, 0);
+    font-size: 18px;
+    margin: 0px 5px;
+}
+
+.d-flex {
+    margin-bottom: 0px !important;
+}
+
+.bgdiv {
+    background-color: rgb(251, 251, 251);
+}
+
+.offcanvas {
+    margin-top: 65px !important;
+    width: 250px !important;
+    cursor: pointer !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+ul {
+    padding-left: 0px !important;
+    margin-bottom: 30px !important;
+}
+
+.menuicon {
+    margin-right: 15px;
+}
+
+.listmenu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: #b3b3b5;
+    font-weight: 500;
+}
+
+.menuopen{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.clobtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

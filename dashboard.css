@@ -105,6 +105,10 @@ ul {
     grid-template-columns: 50% 50%;
 }
 
+.imggrph {
+    width: -webkit-fill-available;
+}
+
 .iteminfo {
     background-color: white;
     padding: 15px 25px;
@@ -135,6 +139,10 @@ ul {
 .rinfo {
     margin-top: 20px;
     /* margin-right: 20px; */
+}
+
+.headingTop {
+    margin-bottom: 50px;
 }
 
 .mtopitem {
@@ -320,10 +328,12 @@ input[type="range"] {
     input[type="range"] {
         width: 100px;
     }
-    .ordertext{
+
+    .ordertext {
         font-size: 18px;
     }
-    .odericonimg{
+
+    .odericonimg {
         width: 40px;
         height: 40px;
     }

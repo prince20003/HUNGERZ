@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
     <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
-    <script src="booking.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
     <div class="bgdiv">
-        <nav class="navbar navbar-expand-lg navbar-light"
-            style="background-color: white;margin-bottom: 20px; z-index : 1080">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbarH">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">HUNGERZ<span style="color: rgb(255, 170, 0)">DESK</span></a>
+                <a class="navbar-brand" href="#">HUNGERZ<span class="headingcolor">DESK</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -28,43 +28,41 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item icontext">
-                            <span class="material-icons"
-                                style="color: rgb(255, 170, 0);font-size: 18px;margin: 0px 5px;">
+                            <span class="material-icons" id="navicon">
                                 assignment
                             </span>
                             <a class="nav-link active" aria-current="page" href="/home.html">POS</a>
                         </li>
                         <li class="nav-item icontext">
-                            <span class="material-icons"
-                                style="color: rgb(255, 170, 0);font-size: 18px;margin: 0px 5px;">
+                            <span class="material-icons" id="navicon">
                                 description
                             </span>
                             <a class="nav-link" href="#">Transactions</a>
                         </li>
                         <li class="nav-item icontext">
-                            <span class="material-icons"
-                                style="color: rgb(255, 170, 0);font-size: 18px;margin: 0px 5px;">
+                            <span class="material-icons" id="navicon">
                                 accessible
                             </span>
                             <a class="nav-link" href="/booking.html">Bookings</a>
                         </li>
                         <li class="nav-item icontext">
-                            <span class="material-icons"
-                                style="color: rgb(255, 170, 0);font-size: 18px;margin: 0px 5px;">
+                            <span class="material-icons" id="navicon">
                                 hourglass_bottom
                             </span>
                             <a class="nav-link" href="#">Order Status</a>
                         </li>
                     </ul>
-                    <form class="d-flex" style="margin-bottom: 0px;">
+                    <form class="d-flex">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJz0NPfL1U3kkLflijqO_9ArT-iE_QLc8mPw&usqp=CAU"
-                            alt="logo" width="50px" height="50px" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            alt="logo" width="50px" height="50px">
+                        <img src="icons/icons8-menu-64.png" alt="" class="menuopen" width="30px" height="30px"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                     </form>
                 </div>
             </div>
         </nav>
-        <div class="mainhe" style="display: flex; justify-content: space-between;">
+
+        <div class="mainhe">
             <div class="headerDe">
                 <div class="boxde"></div>
                 <h2 class="h2t">Bookings</h2>
@@ -82,7 +80,7 @@
                 <table id="dtBasicExample" class="table table-striped">
                     <thead class="theadc">
                         <tr>
-                            <th scope="col" style="padding-left: 20px;">DATE</th>
+                            <th scope="col" class="td1">DATE</th>
                             <th scope="col">TIME</th>
                             <th scope="col">CUSTOMER</th>
                             <th scope="col">NOTE</th>
@@ -91,8 +89,8 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="font-weight: 500; font-size: 18px; cursor: pointer;" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasTableData" aria-controls="offcanvasRight">
+                        <tr class="tableRow" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTableData"
+                            aria-controls="offcanvasRight">
                             <td class="td1">12 June 2020</td>
                             <td class="time">11:30 am</td>
                             <td class="customer">Samantha Smith</td>
@@ -111,8 +109,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr style="font-weight: 500; font-size: 18px; cursor: pointer;" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasTableData" aria-controls="offcanvasRight">
+                        <tr class="tableRow" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTableData"
+                            aria-controls="offcanvasRight">
                             <td class="td1">12 June 2020</td>
                             <td class="time">6:30 pm</td>
                             <td class="customer">Petter Johnson</td>
@@ -131,8 +129,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr style="font-weight: 500; font-size: 18px; cursor: pointer;" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasTableData" aria-controls="offcanvasRight">
+                        <tr class="tableRow" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTableData"
+                            aria-controls="offcanvasRight">
                             <td class="td1">12 June 2020</td>
                             <td class="time">11:30 am</td>
                             <td class="customer">Samantha Smith</td>
@@ -151,8 +149,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr style="font-weight: 500; font-size: 18px; cursor: pointer;" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasTableData" aria-controls="offcanvasRight">
+                        <tr class="tableRow" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTableData"
+                            aria-controls="offcanvasRight">
                             <td class="td1">13 June 2020</td>
                             <td class="time">3:30 pm</td>
                             <td class="customer">Emaila Davis</td>
@@ -171,8 +169,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr style="font-weight: 500; font-size: 18px; cursor: pointer;" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasTableData" aria-controls="offcanvasRight">
+                        <tr class="tableRow" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTableData"
+                            aria-controls="offcanvasRight">
                             <td class="td1">12 June 2020</td>
                             <td class="time">11:30 am</td>
                             <td class="customer">Samantha Smith</td>
@@ -191,8 +189,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr style="font-weight: 500; font-size: 18px; cursor: pointer;" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasTableData" aria-controls="offcanvasRight">
+                        <tr class="tableRow" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTableData"
+                            aria-controls="offcanvasRight">
                             <td class="td1">12 June 2020</td>
                             <td class="time">10:00 am</td>
                             <td class="customer">Rose Merry</td>
@@ -211,8 +209,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr style="font-weight: 500; font-size: 18px; cursor: pointer;" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasTableData" aria-controls="offcanvasRight">
+                        <tr class="tableRow" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTableData"
+                            aria-controls="offcanvasRight">
                             <td class="td1">14 June 2020</td>
                             <td class="time">5:00 pm</td>
                             <td class="customer">Lisa Devilson</td>
@@ -231,8 +229,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr style="font-weight: 500; font-size: 18px; cursor: pointer;" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasTableData" aria-controls="offcanvasRight">
+                        <tr class="tableRow" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTableData"
+                            aria-controls="offcanvasRight">
                             <td class="td1">14 June 2020</td>
                             <td class="time">10:30 am</td>
                             <td class="customer">Paul Haydon</td>
@@ -254,7 +252,7 @@
                     </tbody>
                 </table>
                 <div class="footer">
-                    <p style="font-weight: 500; font-size: 18px">Showing 1 to 10 of 126 Items</p>
+                    <p class="footerde">Showing 1 to 10 of 126 Items</p>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
                             <li class="page-item">
@@ -273,7 +271,6 @@
                         </ul>
                     </nav>
                 </div>
-
             </div>
         </div>
     </div>
@@ -363,12 +360,14 @@
                 </li>
             </ul>
             <ul>
-                <li class="listmenu">
-                    <span class="material-icons menuicon">
-                        settings
-                    </span>
-                    Settings
-                </li>
+                <a href="/setting.html">
+                    <li class="listmenu">
+                        <span class="material-icons menuicon">
+                            settings
+                        </span>
+                        Settings
+                    </li>
+                </a>
             </ul>
             <ul>
                 <li class="listmenu">
@@ -387,12 +386,14 @@
                 </li>
             </ul>
             <ul>
-                <li class="listmenu">
-                    <span class="material-icons menuicon">
-                        logout
-                    </span>
-                    Logout
-                </li>
+                <a href="/login.html">
+                    <li class="listmenu">
+                        <span class="material-icons menuicon">
+                            logout
+                        </span>
+                        Logout
+                    </li>
+                </a>
             </ul>
             <div class="clobtn">
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
@@ -407,7 +408,7 @@
         <div class="offcanvas-header headerBox">
             <div>
                 <h4 id="offcanvasRightLabel">Jimmy Taylor</h4>
-                <p style="color: #b3b3b5;">AB0123 | 15 JUN, 11:35 am</p>
+                <p class="theadItem">AB0123 | 15 JUN, 11:35 am</p>
             </div>
             <img src="icons/icons8-chat-message-32.png" alt="" id="chatbtn" data-bs-toggle="modal"
                 data-bs-target="#ModalMap" onclick="fun()">
@@ -419,7 +420,7 @@
                         <tr class="theadItem">
                             <th scope="col">Q.</th>
                             <th scope="col">ITEMS</th>
-                            <th scope="col" style="text-align: end;">PRICE</th>
+                            <th scope="col" class="textEnd">PRICE</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -460,8 +461,8 @@
                     <p class="priced">$3.00</p>
                 </div>
                 <div class="totald">
-                    <p>Total Paid in <span style="font-weight: 800;">CASH</span></p>
-                    <p class="priced" style="font-weight: 800;">$54.00</p>
+                    <p>Total Paid in <span class="fontWe">CASH</span></p>
+                    <p class="priced" class="fontWe">$54.00</p>
                 </div>
             </div>
             <div class="Bottomdiv">
@@ -469,7 +470,7 @@
                     <img src="icons/photo-1633332755192-727a05c4013d.avif" alt="" class="perimg">
                     <div>
                         <h4 id="offcanvasRightLabel">Georage Anderson</h4>
-                        <p style="color: #b3b3b5;">Delivery partner assigned</p>
+                        <p class="theadItem">Delivery partner assigned</p>
                     </div>
                     <img src="icons/icons8-near-me-24.png" alt="">
                 </div>
@@ -481,20 +482,20 @@
     <div class="modal fade right" id="ModalMap" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" id="dMP">
             <div class="modal-content map" id="modelCo">
-                <div class="headerModel" style="background-color: white;">
+                <div class="headerModel" id="bColor">
                     <img src="icons/photo-1633332755192-727a05c4013d.avif" alt="" class="perimg">
                     <h4 id="offcanvasRightLabel">Georage Anderson</h4>
-                    <button type="button" id="mapclose" onclick="clo()" class="btn-close" data-bs-dismiss="modal"
-                        aria-label="Close" style="color: rgb(255, 170, 0);"></button>
+                    <button type="button" id="mapclose" onclick="clo()" class="btn-close headingcolor" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
                 <div class="body">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8573624035917!2d72.52693367523499!3d23.0290088791692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84c8d4d4139d%3A0x177fd3db1f47ada6!2sShivalik%20Shilp%202!5e0!3m2!1sen!2sin!4v1682939518788!5m2!1sen!2sin"
-                        style="border:0;" loading="lazy" class="mapimg"
+                        loading="lazy" class="mapimg"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div class="Bottomdiv" style="background-color: white;">
+                    <div class="Bottomdiv" id="bColor">
                         <div class="MessageD">
-                            <p style="margin-bottom: 0px; color: #b3b3b5;">Send Message To Delivery Patner</p>
+                            <p class="SendMessage">Send Message To Delivery Patner</p>
                             <img src="icons/icons8-sent-32.png" alt="">
                         </div>
                     </div>

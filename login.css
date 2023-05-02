@@ -8,6 +8,10 @@
     height: 100vh;
 }
 
+.loginFont{
+    font-weight: 500;
+}
+
 .leftM {
     display: grid;
     grid-template-rows: 50% 50%;

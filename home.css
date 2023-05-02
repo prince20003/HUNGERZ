@@ -1,12 +1,3 @@
-.icontext {
-    display: flex;
-    align-items: center;
-}
-
-.bgdiv {
-    background-color: rgb(251, 251, 251);
-}
-
 .maindiv {
     display: grid;
     grid-template-columns: 40% 60%;
@@ -20,6 +11,11 @@
     padding-left: 70px;
     height: calc(100vh - 89px);
     background-color: white;
+}
+
+#imgHome {
+    border-radius: 20px 20px 0px 0px;
+    height: 154px;
 }
 
 .text {
@@ -75,6 +71,7 @@
     justify-content: center;
     align-items: center;
     border: none;
+    cursor: pointer;
 }
 
 .Menuitemdiv {
@@ -87,6 +84,7 @@
     justify-content: center;
     align-items: center;
     border: none;
+    cursor: pointer;
 }
 
 .itemtext {
@@ -151,6 +149,44 @@
     color: rgb(255, 170, 0) !important;
     font-size: 25px !important;
     margin: 0px 10px;
+}
+
+#firstcol {
+    color: hsl(330deg 1.59% 75.29%);
+    text-align: start;
+    padding-left: 20px;
+}
+
+.colorder {
+    color: hsl(330deg 1.59% 75.29%);
+    text-align: center;
+}
+
+.tablebodycolor {
+    background-color: white;
+}
+
+#billdetail {
+    text-align: right;
+}
+
+#billdetailto {
+    justify-content: end;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+#AmountPay {
+    justify-content: end;
+    background-color: white;
+    padding: 5px 0px;
+    font-weight: 500;
+}
+
+#btnPlaceOrder {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    margin: 10px 10px;
 }
 
 .td1 {
@@ -220,8 +256,16 @@
     padding-top: 25px;
 }
 
+.PaymentDiv {
+    margin-top: 20px;
+}
+
 .radiobtn1 {
     display: flex;
+}
+
+.OrderType {
+    margin-top: 25px;
 }
 
 .radiobtn {
@@ -244,6 +288,17 @@
 
 .checkcolor {
     margin-right: 10px;
+}
+
+.inputPay {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-groupP {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    margin-top: 80px;
 }
 
 .form-select {
@@ -273,35 +328,6 @@
     border: none;
     outline: none;
     font-size: 18px;
-}
-
-
-.offcanvas {
-    margin-top: 65px !important;
-    width: 250px !important;
-}
-
-ul {
-    padding-left: 0px !important;
-    margin-bottom: 30px !important;
-}
-
-.menuicon {
-    margin-right: 15px;
-}
-
-.listmenu {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    color: #b3b3b5;
-    font-weight: 500;
-}
-
-.clobtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 @media screen and (max-width: 768px) {
