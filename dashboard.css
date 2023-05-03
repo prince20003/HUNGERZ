@@ -73,6 +73,10 @@ ul {
     color: rgb(255, 170, 0) !important;
 }
 
+#myChart{
+  width: -webkit-fill-available ;
+}
+
 .mgrphdiv {
     background-color: white;
     margin: 0px 20px;
@@ -138,6 +142,8 @@ ul {
 
 .rinfo {
     margin-top: 20px;
+    background-color: white;
+    padding: 15px 35px;
     /* margin-right: 20px; */
 }
 
