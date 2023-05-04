@@ -1,3 +1,19 @@
+
+var element = document.getElementsByClassName("Menuitemdiv");
+for (var i = 0; i < element.length; i++) {
+    element[i].onclick = function () {
+        var el = element[0];
+        while (el) {
+            if (el.tagName == "DIV") {
+                el.classList.remove("divBackgroundColor");
+            }
+            el = el.nextSibling;
+        }
+        this.classList.add("divBackgroundColor");
+    }
+}
+
+
 function fun() {
     document.getElementById("offcanvasTableData").style.right = "399px";
 }
@@ -5,59 +21,6 @@ function fun() {
 function clo() {
     document.getElementById("offcanvasTableData").style.right = "0px";
 }
-
-
-const chColor = (event) => {
-    if (event.target.id == "first") {
-        document.getElementById("first").style.backgroundColor = 'rgb(255, 170, 0)'
-        document.getElementById("second").style.backgroundColor = 'white'
-        document.getElementById("third").style.backgroundColor = 'white'
-        document.getElementById("four").style.backgroundColor = 'white'
-        document.getElementById("five").style.backgroundColor = 'white'
-        document.getElementById("six").style.backgroundColor = 'white'
-    }
-    if (event.target.id == "second") {
-        document.getElementById("second").style.backgroundColor = 'rgb(255, 170, 0)'
-        document.getElementById("first").style.backgroundColor = 'white'
-        document.getElementById("third").style.backgroundColor = 'white'
-        document.getElementById("four").style.backgroundColor = 'white'
-        document.getElementById("five").style.backgroundColor = 'white'
-        document.getElementById("six").style.backgroundColor = 'white'
-    }
-    if (event.target.id == "third") {
-        document.getElementById("third").style.backgroundColor = 'rgb(255, 170, 0)'
-        document.getElementById("first").style.backgroundColor = 'white'
-        document.getElementById("second").style.backgroundColor = 'white'
-        document.getElementById("four").style.backgroundColor = 'white'
-        document.getElementById("five").style.backgroundColor = 'white'
-        document.getElementById("six").style.backgroundColor = 'white'
-    }
-    if (event.target.id == "four") {
-        document.getElementById("four").style.backgroundColor = 'rgb(255, 170, 0)'
-        document.getElementById("first").style.backgroundColor = 'white'
-        document.getElementById("second").style.backgroundColor = 'white'
-        document.getElementById("third").style.backgroundColor = 'white'
-        document.getElementById("five").style.backgroundColor = 'white'
-        document.getElementById("six").style.backgroundColor = 'white'
-    }
-    if (event.target.id == "five") {
-        document.getElementById("five").style.backgroundColor = 'rgb(255, 170, 0)'
-        document.getElementById("first").style.backgroundColor = 'white'
-        document.getElementById("second").style.backgroundColor = 'white'
-        document.getElementById("third").style.backgroundColor = 'white'
-        document.getElementById("four").style.backgroundColor = 'white'
-        document.getElementById("six").style.backgroundColor = 'white'
-    }
-    if (event.target.id == 'six') {
-        document.getElementById("six").style.backgroundColor = 'rgb(255, 170, 0)'
-        document.getElementById("first").style.backgroundColor = 'white'
-        document.getElementById("second").style.backgroundColor = 'white'
-        document.getElementById("third").style.backgroundColor = 'white'
-        document.getElementById("four").style.backgroundColor = 'white'
-        document.getElementById("five").style.backgroundColor = 'white'
-    }
-}
-
 
 var xValues = ["12 Jan", "13 Jan", "14 Jan", "15 Jan", "16 Jan", "17 Jan", "18 Jan"];
 var yValues = [25, 50, 40, 85, 125, 100, 124];
@@ -71,7 +34,7 @@ new Chart("myChart", {
         datasets: [{
             backgroundColor: barColors,
             data: yValues,
-            borderRadius : 50 
+            borderRadius: 50
         }]
     },
     options: {
