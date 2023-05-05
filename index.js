@@ -35,7 +35,17 @@ new Chart("myChart", {
             backgroundColor: barColors,
             data: yValues,
             borderRadius: 50
-        }]
+        },
+        {
+            type: 'scatter',
+            data: [25, 50, 40, 85, 125, 100, 124],
+            backgroundColor: "rgb(255, 177, 0)",
+            borderColor: "rgb(255, 177, 0)",
+            pointRadius: 10,
+            pointHoverRadius: 7,
+            borderWidth: 0,
+        }
+        ]
     },
     options: {
         legend: { display: false },
@@ -59,6 +69,13 @@ new Chart("piechart", {
     options: {
         title: {
             display: true,
-        }
+        },
+        plugins: {
+            legend: {
+                display: true,
+                position: 'right',
+            },
+        },
+
     }
 });
