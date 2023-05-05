@@ -14,11 +14,11 @@ for (var i = 0; i < element.length; i++) {
 }
 
 
-function fun() {
+function rightModel() {
     document.getElementById("offcanvasTableData").style.right = "399px";
 }
 
-function clo() {
+function close() {
     document.getElementById("offcanvasTableData").style.right = "0px";
 }
 
