@@ -18,7 +18,7 @@ function rightModel() {
     document.getElementById("offcanvasTableData").style.right = "399px";
 }
 
-function close() {
+function closecanvas() {
     document.getElementById("offcanvasTableData").style.right = "0px";
 }
 
