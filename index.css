@@ -90,7 +90,7 @@ ul {
 .leftM {
     display: grid;
     grid-template-rows: 50% 50%;
-    height: -webkit-fill-available;
+    height: inherit;
 }
 
 .loginheading {
