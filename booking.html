@@ -279,22 +279,23 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Add Booking</h5>
+                    <h3 class="modal-title" id="exampleModalLabel">Add Booking</h3>
                 </div>
                 <div class="modal-body">
                     <div class="modelform">
                         <div class="leftform">
-                            <p for="Date">SELECT DATE</p>
+                            <p for="Date" class="labelDATE">SELECT DATE</p>
                             <input type="date" class="datefiled" placeholder="Select Date">
-                            <p for="name">CUSTOMER NAME</p>
-                            <input type="text" class="datefiled" placeholder="Enter Customer Name">
-                            <p for="number">PHONE NUMBER</p>
-                            <input type="number" class="datefiled" placeholder="Enter Number">
+                            <p for="name" class="labelDATE">CUSTOMER NAME</p>
+                            <input type="text" class="datefiled" placeholder="Enter Customer Name"
+                                value="Samantha Smith">
+                            <p for="number" class="labelDATE">PHONE NUMBER</p>
+                            <input type="number" class="datefiled" placeholder="Enter Number" value="9876543210">
                         </div>
                         <div class="rightform">
-                            <p for="time">SELECT TIME</p>
+                            <p for="time" class="labelDATE">SELECT TIME</p>
                             <input type="time" class="datefiled" placeholder="Select Time">
-                            <p for="per">SELECT PERSON</p>
+                            <p for="per" class="labelDATE">SELECT PERSON</p>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Select Person</option>
                                 <option value="1">One</option>
@@ -303,7 +304,7 @@
                             </select>
                         </div>
                     </div>
-                    <p for="note">ADD NOTES</p>
+                    <p for="note" class="labelDATE">ADD NOTES</p>
                     <input type="text" class="datefiled" placeholder="i.g For Anniversary Surprise">
                 </div>
                 <div class="modal-footer">

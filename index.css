@@ -830,7 +830,7 @@ ul {
 
 #myChart {
     width: -webkit-fill-available !important;
-    height: 500px  !important;
+    height: 500px !important;
 }
 
 .mgrphdiv {
@@ -1037,9 +1037,10 @@ input[type="range"] {
     input[type="range"] {
         width: 300px;
     }
+
     #myChart {
         width: -webkit-fill-available !important;
-        height: auto  !important;
+        height: auto !important;
     }
 }
 
@@ -1094,6 +1095,7 @@ input[type="range"] {
         width: 40px;
         height: 40px;
     }
+
     #myChart {
         width: -webkit-fill-available !important;
         height: 150px !important;
@@ -1367,6 +1369,14 @@ input[type="range"] {
     margin-top: 65px;
 }
 
+.modal-title {
+    font-weight: 700;
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
 .modal-content {
     height: 92%;
     width: 600px !important;
@@ -1387,6 +1397,10 @@ input[type="range"] {
     grid-template-columns: 50% 50%;
 }
 
+.labelDATE {
+    font-weight: 500;
+}
+
 .datefiled {
     border-radius: 20px;
     background-color: hsl(225deg 22.22% 96.47%);
@@ -1397,6 +1411,8 @@ input[type="range"] {
     outline: none;
     font-size: 18px;
     width: 100%;
+    color: black !important;
+    font-weight: 600;
 }
 
 .leftform {
@@ -1591,13 +1607,31 @@ ul {
     padding-bottom: 10px !important;
 }
 
-@media screen and (max-width: 770px) and (min-width:500px) {
+@media screen and (max-width: 1030px) and (min-width: 770px) {
+    .modal.fade:not(.in).right .modal-dialog {
+        margin-top: 53px !important;
+        margin-right: 120px !important;
+    }
+
+    .modal-content {
+        width: 500px !important;
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width: 770px) and (min-width: 450px) {
     .action {
         height: 65px;
     }
 
     .modal.fade:not(.in).right .modal-dialog {
         margin-top: 53px !important;
+        margin-right: 120px !important;
+    }
+
+    .modal-content {
+        width: 500px !important;
+        height: auto !important;
     }
 
     .TableData {
@@ -1610,6 +1644,7 @@ ul {
 }
 
 @media screen and (max-width: 430px) and (min-width:300px) {
+
     .mainhe {
         display: flex;
         flex-direction: column;
@@ -1716,9 +1751,8 @@ body {
     justify-content: space-evenly;
     background-color: hsl(228deg 55.56% 98.24%);
     padding: 0px;
-    /* min-height: 100vh; */
-    height: 100%;
 }
+
 
 .up_img_box {
     text-align: center;
@@ -1764,13 +1798,15 @@ body {
 .BGP {
     background-color: white;
     padding: 20px;
-    height: calc(100vh - 20px);
+    /* height: calc(100vh - 20px); */
+    height: max-content;
 }
 
 .RGP {
     background-color: white;
     padding: 20px;
-    height: calc(100vh - 125px);
+    /* height: calc(100vh - 125px); */
+    height: max-content;
 }
 
 .PR {
@@ -1871,7 +1907,7 @@ p {
     display: grid;
     grid-template-columns: 50% 30%;
     justify-content: space-between;
-    padding-bottom: 50%;
+    padding-bottom: 70%;
 }
 
 .aa {
@@ -1894,11 +1930,6 @@ p {
     background-color: hsl(41.61deg 97.64% 49.8%) !important;
     border: none;
 }
-
-/* .form-check-input {
-    background-color: hsl(41.61deg 97.64% 49.8%) !important;
-    border: none;
-} */
 
 
 .form-check-input:checked+.form-check-label::before {
@@ -1929,7 +1960,7 @@ p {
         height: max-content;
     }
 
-    body{
+    body {
         height: max-content !important;
     }
 
@@ -1944,17 +1975,6 @@ p {
         grid-template-columns: auto auto;
         justify-content: space-between;
     }
-    .BGP {
-        background-color: white;
-        padding: 20px;
-        height: auto !important;
-    }
-    
-    .RGP {
-        background-color: white;
-        padding: 20px;
-        height: 100vh !important;
-    }
 }
 
 @media only screen and (max-width:426px) {
@@ -1968,18 +1988,8 @@ p {
         display: flex;
         justify-content: space-evenly;
     }
-    .BGP {
-        background-color: white;
-        padding: 20px;
-        height: auto;
-    }
-    
-    .RGP {
-        background-color: white;
-        padding: 20px;
-        height: auto;
-    }
-    .boxColor{
+
+    .boxColor {
         margin-top: 20px !important;
     }
 }
