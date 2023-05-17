@@ -312,6 +312,58 @@ p {
     margin-bottom: 0px;
 }
 
+.foodD {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plusIcon {
+    height: 25px;
+    width: 25px;
+}
+
+#offcanvasFoodDetail {
+    width: 400px !important;
+}
+
+#imgCart {
+    border-radius: 20px !important;
+}
+
+.CartHeading{
+    margin-top: 10px !important;
+}
+
+.bodyPadding {
+    padding: 40px;
+}
+
+.divFlex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.parCart{
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+}
+
+.Cartbtn {
+    padding: 7px 40px;
+    border-radius: 5px;
+    background-color: rgb(255, 170, 0);
+    border: none;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.colortext {
+    color: grey;
+}
+
 .descriptiondiv {
     margin-top: 10px;
     margin-bottom: 50px;
@@ -623,6 +675,10 @@ p {
         grid-template-columns: auto auto auto;
         column-gap: 20px;
         row-gap: 20px;
+    }
+
+    #offcanvasFoodDetail{
+        margin-top: 0px !important;
     }
 
     .content {
